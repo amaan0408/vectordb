@@ -68,7 +68,8 @@ public class OllamaClient {
             if (arr == null) return null;
 
             float[] emb = new float[arr.size()];
-            for (int i = 0; i < arr.size(); i++) emb[i] = arr.get(i).getAsFloat();
+            for (int i = 0; i < arr.size(); i++)
+            emb[i] = arr.get(i).getAsFloat();
             return emb;
 
         } catch (Exception e) {

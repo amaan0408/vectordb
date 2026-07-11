@@ -27,8 +27,10 @@ public class DocumentDB {
         DocItem item = new DocItem(nextId.getAndIncrement(), title, text, emb);
         store.put(item.id, item);
         VectorItem vi = new VectorItem(item.id, title, "doc", emb);
+
         hnsw.insert(vi, DistanceMetrics::cosine);
         bf.insert(vi);
+
         return item.id;
     }
 
