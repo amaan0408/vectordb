@@ -3,6 +3,7 @@ package index;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import vectordb.distance.DistanceMetrics;
+import vectordb.index.KDTree;
 import vectordb.model.VectorItem;
 
 import java.util.List;

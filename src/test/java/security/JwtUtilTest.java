@@ -2,6 +2,7 @@ package security;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import vectordb.security.JwtUtil;
 
 import static org.junit.jupiter.api.Assertions.*;
 
